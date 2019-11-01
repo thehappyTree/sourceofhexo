@@ -22,9 +22,10 @@ if __name__=="__main__":
         print("开启服务")
         current_path = os.path.dirname(os.path.abspath(__file__))
         print current_path
-        os.system("cd {} hexo clean & hexo g & hexo s".format(current_path))
+        os.system("cd {} & hexo clean & hexo g & hexo s".format(current_path))
     # 推送git
     elif master_hexo:
         print("推送git")
-        os.system("hexo clean & hexo g & hexo d")
-        os.system("git add . & git commit -m '{}' & git push origin master".format(master_hexo))
+        current_path = os.path.dirname(os.path.abspath(__file__))
+        os.system("cd {} & hexo clean & hexo g & hexo d".format(current_path))
+        os.system("cd {} & git add . & git commit -m '{}' & git push origin master".format(current_path,master_hexo))
