@@ -20,7 +20,9 @@ if __name__=="__main__":
     # 开启hexo服务
     if start:
         print("开启服务")
-        os.system("hexo clean & hexo g & hexo s")
+        current_path = os.path.dirname(os.path.abspath(__file__))
+        print current_path
+        os.system("cd {} hexo clean & hexo g & hexo s".format(current_path))
     # 推送git
     elif master_hexo:
         print("推送git")
