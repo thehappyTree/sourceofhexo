@@ -1,5 +1,5 @@
 ### first commit
-#说明
+# 说明
 1.为了防止代码丢失当前git master分支是存储hexo源码的库和分支
 - 添加完文章推送源码git push origin master
 - 源码git库配置如下(.git/config)：
