@@ -76,7 +76,7 @@ avatar: https://avatars0.githubusercontent.com/u/32305605?s=400&u=7e8ce447fe3853
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next1
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -99,9 +99,8 @@ social:
   FB Page: https://www.facebook.com/sansan.li.5680
   YouTube: https://www.youtube.com/channel/UCkQB_V6TA7Enf-o2guwPD0A
 
-# cms
-netlify_cms:
-  backend:
-    name: git-gateway
-    branch: master 
-
+# hexo-admin authentification
+admin:
+  username: likewei
+  password_hash: $2a$10$OLmJoJg.i2zZ2cfKI.xseeZlz.8IfFw0uulRDu2yP37rKG9cBhyGq
+  secret: my super secret phrase
