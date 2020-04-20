@@ -82,7 +82,7 @@ theme: next1
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:thehappyTree/thehappyTree.github.io.git
+  repo: git@49.234.61.111:/srv/git_warehouse/blog.git
   branch: master
 
 search:
@@ -99,5 +99,9 @@ social:
   FB Page: https://www.facebook.com/sansan.li.5680
   YouTube: https://www.youtube.com/channel/UCkQB_V6TA7Enf-o2guwPD0A
 
- 
+# cms
+netlify_cms:
+  backend:
+    name: git-gateway
+    branch: master 
 
